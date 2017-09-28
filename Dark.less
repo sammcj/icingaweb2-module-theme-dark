@@ -1,0 +1,145 @@
+@body-bg-color: #141414;
+
+@icinga-blue: #00D8BA;
+
+@black: #ADADAD;
+
+@gray: #7F7F7F;
+@gray-light: #2F2F2F;
+@gray-lighter: #0C0C0C;
+@gray-lightest: #1F1F1F;
+
+@tr-active-color: #1C1C1C;
+@tr-hover-color: #008C6E;
+
+@color-notification-success: #005247;
+
+input, select, textarea {
+  background-color: @gray-lighter !important;
+}
+
+input[type="submit"] {
+  .button(@gray, @icinga-blue);
+}
+
+tr[href]:hover {
+  color: @gray-lighter !important;
+  .overview-plugin-output {
+    color: @gray-light;
+  }
+}
+
+#header-logo {
+  background-image: url('../img/Dark/icinga-logo-dark.svg');
+}
+
+.icinga-module.module-monitoring .plugin-output {
+  background: @gray-lighter;
+  border-left: 5px solid @icinga-blue;
+}
+
+#main div.filter form.editor ul.tree li.active {
+  background-color: @gray-lighter;
+}
+
+#login {
+  #icinga-logo {
+    background-image: url('../img/Dark/icinga-logo-dark.svg');
+  }
+  input[type=password],
+  input[type=text] {
+    color: @icinga-blue;
+  }
+  input[type=submit] {
+    .button(@icinga-blue, @gray);
+  }
+}
+
+input[type="submit"] {
+  .button(@gray, @icinga-blue);
+}
+
+
+/* Scrollbars */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-corner {
+  background: @body-bg-color;
+}
+
+
+/* Tactical Overview */
+
+.icinga-module.module-monitoring .boxview div.box.contents {
+  background-color: @body-bg-color;
+}
+
+.icinga-module.module-monitoring div.box.ok_hosts.state_up,
+.icinga-module.module-monitoring div.box.problem_hosts.state_down {
+  border: none;
+}
+
+
+/* Icingaweb2 Module Director */
+
+.icinga-module.module-director dd.active ul.extensible-set input[type=text], 
+.icinga-module.module-director ul.extensible-set.sortable input[type=text] {
+  border: none;
+}
+
+.icinga-module.module-director div.filter form.editor > ul.tree ul li.active {
+  background-color: @tr-hover-color !important;
+}
+
+.icinga-module.module-director ul.main-actions li a:hover {
+  background-color: @tr-hover-color;
+  color: inherit;
+}
+
+.icinga-module.module-director form input[type=submit] {
+  .button(@gray, @icinga-blue);
+}
+
+
+/* Icingaweb2 Module Businessprocess */
+
+.icinga-module.module-businessprocess .breadcrumb li a:before {
+  border-left-color: @body-bg-color;
+}
+
+
+/* Icingaweb2 Module Grafana */
+
+.icinga-module.module-grafana {
+  .grafana-menu-navigation {
+    background: @body-bg-color;
+    li {
+      color: @body-bg-color;
+    }
+    li:nth-child(even) { 
+      background: @black; 
+      color: @body-bg-color;
+    }
+    li:nth-child(odd) {
+      background: @black;
+      color: @body-bg-color;
+    }
+  }
+  .grafana-menu-navigation:hover a.main {
+    background-color: @tr-hover-color;
+  }
+}
+

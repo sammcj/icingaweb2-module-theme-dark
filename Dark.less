@@ -123,8 +123,11 @@ input[type="submit"] {
   input[type=password].search,
   textarea.search,
   select.search {
-    color: @icinga-blue;
     background-color: transparent !important;
+
+    &:focus {
+       color: @icinga-blue;
+    }
   }
 }
 

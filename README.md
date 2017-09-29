@@ -7,7 +7,7 @@ The Icingaweb2 default theme is great but for me it's a bit too bright . So i've
 
 ## How to install
 
-It is really easy to install. Just copy the files `Dark.less` and `icinga-logo-dark.svg` to the your Icingaweb2 directory as follows:
+It is really easy to install. Just copy all files to your Icingaweb2 directory as follows:
 
 ```
 +--icingaweb2
@@ -18,6 +18,7 @@ It is really easy to install. Just copy the files `Dark.less` and `icinga-logo-d
       +--img
          +--Dark
             +--icinga-logo-dark.svg
+            +--search_cyan.png
 ```
 
 Reload the Icingaweb2 page and choose the new **Dark** theme in your account settings.

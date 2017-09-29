@@ -118,6 +118,14 @@ input[type="submit"] {
   form input[type=submit] {
     .button(@gray, @icinga-blue);
   }
+
+  input[type=text].search,
+  input[type=password].search,
+  textarea.search,
+  select.search {
+    color: @icinga-blue;
+    background-color: transparent !important;
+  }
 }
 
 

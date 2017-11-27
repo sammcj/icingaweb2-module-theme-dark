@@ -1,27 +1,30 @@
-# icingaweb2-theme-dark: A dark theme for Icingaweb2
+# icingaweb2-module-theme-dark: A dark theme for Icingaweb2
 
 ## Description
 
-The Icingaweb2 default theme is great but for me it's a bit too bright . So i've changed some colors - no code.
+This is a dark theme for Icingaweb2. For a consistent look it also changes few styles from other modules, like Icinga Director for example.
 
 
 ## How to install
 
-It is really easy to install. Just copy all files to your Icingaweb2 directory as follows:
+1. Change to the directory `modules`
 
-```
-+--icingaweb2
-   +--public
-      +--css
-      |  +--themes
-      |     +--Dark.less
-      +--img
-         +--Dark
-            +--icinga-logo-dark.svg
-            +--search_cyan.png
-```
+        # cd /usr/share/icingaweb2/modules
 
-Reload the Icingaweb2 page and choose the new **Dark** theme in your account settings.
+2. Clone this module
+
+        # git clone https://github.com/vita2/icingaweb2-module-theme-dark.git theme-dark
+
+3. Now, open Icingaweb2 in your browser
+4. Enable the module (**Configuration** -> **Modules** -> **theme-dark**)
+
+    alternative, it can be done via command line interface:
+    
+        # icingacli module enable theme-dark
+
+5. Select the new theme in your account settings (**Username** -> **My Account** -> **Theme** -> **theme-dark/Dark**)
+
+Icingaweb2 will instantly switch to the new theme. If not, please try to reload the page.
 
 
 ## Example Screenshots

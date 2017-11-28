@@ -49,6 +49,11 @@ Icingaweb2 will instantly switch to the new theme. If not, please try to reload 
 ![Service with Grafana](screenshots/icingaweb2-service-with-grafana-module.png)
 
 
+### Business Processes module ###
+
+![Business Processes](screenshots/icingaweb2-businessprocesses.png)
+
+
 ### Icingaweb2 Director module
 
 ![Director](screenshots/icingaweb2-director-module.png)

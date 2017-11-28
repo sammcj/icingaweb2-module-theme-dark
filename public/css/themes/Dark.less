@@ -30,11 +30,16 @@ tr[href]:hover {
   }
 }
 
-input.search {
-  &:focus {
+#menu {
+  input.search {
     color: @icinga-blue;
-    background-color: @body-bg-color;
-    background-image: url('../img/theme-dark/search_cyan.png') !important;
+    background-image: url('../img/theme-dark/search_gray.png');
+ 
+    &:focus {
+      color: @icinga-blue;
+      background-color: @body-bg-color;
+      background-image: url('../img/theme-dark/search_cyan.png') !important;
+    }
   }
 }
 
@@ -42,9 +47,27 @@ input.search {
   background-image: url('../img/theme-dark/icinga-logo-dark.svg');
 }
 
-#layout.sidebar-collapsed {
+#layout:not(.minimal-layout).sidebar-collapsed {
   #header-logo {
     background-image: url('../img/theme-dark/icinga-logo-compact-dark.svg');
+  }
+  #search:focus {
+    color: @icinga-blue; 
+  }
+}
+
+#menu {
+  background-color: @gray-lighter;
+
+  .nav-level-1 > .nav-item {
+    color: @black;
+
+    &.active, &:hover {
+      color: @icinga-blue;
+    }
+  }
+  .nav-level-2 > .nav-item {
+    color: @black;
   }
 }
 
@@ -53,8 +76,19 @@ input.search {
 }
 
 #login {
+  background-color: @body-bg-color;
+  background-image: url('../img/theme-dark/icingaweb2-background-dark.jpg');
+
   #icinga-logo {
     background-image: url('../img/theme-dark/icinga-logo-dark.svg');
+  }
+
+  .login-form {
+    background-color: @icinga-blue;
+  }
+
+  .control-label {
+    color: @body-bg-color;
   }
 
   input[type=password],
@@ -67,8 +101,33 @@ input.search {
   }
 }
 
+#login-footer {
+  color: @body-bg-color;
+}
+
+#social > li i{
+  color: @body-bg-color;
+  text-shadow: 0 0 0.5em @icinga-blue;
+}
+
+#layout.minimal-layout {
+  #social > li a i {
+    color: @body-bg-color;
+  }
+}
+
 input[type="submit"] {
   .button(@gray, @icinga-blue);
+}
+
+.dashboard-link {
+  &:hover {
+    color: @gray-lighter !important;
+
+    .link-description {
+      color: @gray-lighter;
+    }
+  }
 }
 
 

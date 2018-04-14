@@ -44,12 +44,18 @@ tr[href]:hover {
 }
 
 #header-logo {
-  background-image: url('../img/theme-dark/icinga-logo-dark.svg');
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -ms-filter: invert(100%);
+  filter: invert(100%);
 }
 
 #layout:not(.minimal-layout).sidebar-collapsed {
   #header-logo {
-    background-image: url('../img/theme-dark/icinga-logo-compact-dark.svg');
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    -ms-filter: invert(100%);
+    filter: invert(100%);
   }
   #search:focus {
     color: @icinga-blue; 
